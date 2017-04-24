@@ -15,8 +15,8 @@ body#logged-out {
     background: rgb(223, 223, 223);
 }
 body#logged-out section#chat {
-    filter: blur(5px);
-    -webkit-filter: blur(5px);
+    filter: blur(80px);
+    -webkit-filter: blur(80px);
 }
 body#logged-out section#login {
     opacity: 1;
@@ -25,12 +25,12 @@ section#chat {
     height: 100%;
 }
 section#chat form {
-    background: #000;
-    padding: 3px;
+    background: #eee;
+    padding: 10px;
     position: fixed;
     bottom: 0;
     width: 100%;
-    height: 50px;
+    height: 60px;
 }
 section#chat form input {
     border: 0;
@@ -43,12 +43,13 @@ section#chat form input {
 section#chat form button {
     width: 9%;
     height: 100%;
-    background: #4ec9b2;
+    background: #d51e20;
     float: right;
     border: none;
-    margin-right: 0.5%;
+    margin-right: 0.2%;
     font-size: 17px;
     color: white;
+    border-radius: 3px;
 }
 section#chat #messages {
     list-style-type: none;
@@ -70,12 +71,12 @@ section#chat #messages li.logout {
 section#chat #messages li.login {
 	background: #A8E5A6;
 }
-section#chat #messages li span.label {
+section#chat #messages li span.username {
 	display: inline-block;
 	padding: 6px 10px;
 	margin-right: 5px;
 	color: white;
-	background: #4ec9b2;
+	background: #d51e20;
 	border-radius: 5px;
 }
 section#chat #messages li span.info {
@@ -83,7 +84,7 @@ section#chat #messages li span.info {
 	padding: 3px 10px;
 	margin-right: 5px;
 	color: white;
-	background: #4ec9b2;
+	background: #d51e20;
 	border-radius: 5px;
 }
 section#chat #users {
@@ -98,14 +99,14 @@ section#chat #users {
     border-left: 3px solid #eee;
 }
 section#chat #users li.new {
-    background: #4ec9b2;
+    background: #7de990;
     color: white;
 }
 section#chat #users li {
     padding: 6px 10px;
     margin: 10px 10px;
     border-radius: 5px;
-    border: 1px solid #4ec9b2;
+    border: 1px solid #d51e20;
     color: black;
     transition: all 0.5s;
 }
@@ -113,36 +114,43 @@ section#chat #users li span.typing {
     float: right;
     font-style: italic;
     color: #eee;
+    display: none;
 }
 section#login {
     transition: all 0.5s;
     opacity: 0;
-    top: 35%;
+    top: 20%;
     text-align: center;
     position: fixed;
     width: 100%
 }
+
+
 section#login label[for="u"] {
 	display: block;
 	font-size: 24px;
-	margin-bottom: 10px;
-    
+	margin-bottom: 15px;
+    margin-top: 25px;
+    font-family: 'Pathway Gothic One', sans-serif;
 }
 section#login input#u {
 	font-size: 25px;
 	text-align: center;
 	padding: 5px;
 	border: 0px solid rgb(158, 158, 158);
+    border-radius: 3px;
 }
 section#login input#u:focus {
 	outline: none;
 }
 section#login button {
-	background: #4ec9b2;
+	background: #d51e20;
 	border: none;
-	padding: 15px 133px;
+	padding: 20px 114px;
 	color: white;
 	font-size: 20px;
 	margin-top: 10px;
 	cursor: pointer;
+    border-radius: 3px;
+    font-family: 'Pathway Gothic One', sans-serif;
 }
